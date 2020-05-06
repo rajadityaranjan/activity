@@ -34,13 +34,13 @@ As soon as the QAT approves, both the branches of development and production are
 
 1. Created a hook for post-commit in local git to automate pushing the code into github repository each time developer commits
 
-   ![Post-Commit](Screenshots/1.JPG)
+   ![Post-Commit](Screenshots/1.jpg)
 
-   ![Hooks](Screenshots/2.JPG)
+   ![Hooks](Screenshots/2.jpg)
 
 2. Added The webhooks to the Jenkins Github Webhooks in the settings :=> `ip/github-webhook/`
 
-![Webhooks](Screenshots/webhook8081.JPG)
+![Webhooks](Screenshots/webhook8081.jpg)
 
 
 ### Operations Side:
@@ -64,7 +64,7 @@ As soon as the QAT approves, both the branches of development and production are
 1. Production was behind Testing so only the url which points to port 8081 is ahead of the port 8082, after the commit done by the developer testing is done which is to be approved by the QAT(Quality Assurance Team) department. Until QAT approves production can not be updated.
 
 
-![Initial](Screenshots/Testingphase1.JPG)
+![Initial](Screenshots/Testingphase1.jpg)
 
 2. QAT team tests and approves(this was built manually as still I don't know about the testing integration part). This can be inferred by the successful build by Project QAT in jenkins.
 
@@ -92,7 +92,7 @@ As soon as the QAT approves, both the branches of development and production are
 QA team will check the testing environment at this port address.
 
 
-![01](Testing.JPG)
+![01](Testing.jpg)
 
 
 ## 2. Quality Assurance Team(QAT) :
@@ -103,7 +103,7 @@ QA team will check the testing environment at this port address.
 * Details is provided to the additional behaviour so that merging could be done.
 
 
-![02](Screenshots/QAT1.JPG)
+![02](Screenshots/QAT1.jpg)
 
 
 * Post Build Action details provided, so that push after the merge can be done
@@ -113,7 +113,7 @@ QA team will check the testing environment at this port address.
 * After the push is being done. This job will call the jobs Production and Testing so that the code can be updated.
 
 
-![03](Screenshots/QAT2.JPG)
+![03](Screenshots/QAT2.jpg)
 
 ## 3. Production:
 
@@ -126,4 +126,4 @@ QA team will check the testing environment at this port address.
 
 **Note**- We created a directory inside local host /jenkins/prod/
 
-![04](Screenshots/Production.JPG)
+![04](Screenshots/Production.jpg)
