@@ -92,7 +92,7 @@ As soon as the QAT approves, both the branches of development and production are
 QA team will check the testing environment at this port address.
 
 
-![01](Testing.jpg)
+![01](Screenshots/Testing.jpg)
 
 
 ## 2. Quality Assurance Team(QAT) :
